@@ -22,7 +22,8 @@ How to get data:
 4. Run the server
  - `export FLASK_APP=server.py`
  - `python -m flask run`
-# Dockerizing
+
+## Dockerizing
 1. Update requirements file  
 `pipenv -r > requirements.txt`
 2. Build docker from project directory  
