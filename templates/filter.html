@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filters</title>
+
+    <script>
+        var intervals = {{intervals_dec | tojson }};
+        var building_codes = {{building_codes | tojson }};
+        var buildings = {{buildings | tojson }};
+
+        console.log(intervals, building_codes, buildings);
+    </script>
+
+    <!-- D3.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js" charset="utf-8"></script>
+
+	<!-- Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+
+    <script src="static/js/building_codes_select.js"></script>
+    <script src="static/js/filter.js"></script>
+    <script src="static/js/heatmap.js"></script>
+    <script src="static/js/form.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+
+    <form action="" method="GET">
+      Building Codes:<br>
+        <select id="building_codes_select" name="building_codes" size="10" multiple>
+          </select><br>
+      Min room size:<br>
+      <input type="number" name="min_room_size" value="50" min="0" max="1000"><br>
+      Max room size:<br>
+      <input type="number" name="max_room_size" value="200" min="0" max="1000"><br>
+        Show seat utilization: <input type="checkbox" name="seat_utilization" checked=true><br><br>
+      <input type="button" value="Submit" onClick="submitForm(this.form)">
+    </form>
+
+    <div id="heatmap"></div>
+
+</body>
+</html>

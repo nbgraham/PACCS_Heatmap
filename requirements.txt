@@ -1,0 +1,13 @@
+pytz==2017.2
+pyparsing==2.2.0
+click==6.7
+itsdangerous==0.24
+flask==0.12.2
+cycler==0.10.0
+matplotlib==2.1.0
+python-dateutil==2.6.1
+jinja2==2.9.6
+six==1.11.0
+numpy==1.13.3
+markupsafe==1.0
+werkzeug==0.12.2

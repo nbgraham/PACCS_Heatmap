@@ -1,0 +1,93 @@
+html { font-size: 62.5%; }
+
+body {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    fill: #8C8C8C;
+    text-align: center;
+}
+
+.xLabel, .yLabel {
+    font-size: 1.0rem;
+    fill: #AAAAAA;
+    font-weight: 300;
+}
+
+text.axis-workweek, text.axis-worktime {
+    fill: #404040;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 2.8rem;
+    fill: #4F4F4F;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    fill: #AAAAAA;
+    font-weight: 300;
+}
+
+.credit {
+    font-size: 1.2rem;
+    fill: #AAAAAA;
+    font-weight: 400;
+}
+
+.axis path, .axis tick, .axis line {
+      fill: none;
+      stroke: none;
+  }
+
+text {
+      font-size: 1.2rem;
+      fill: #AAAAAA;
+      font-weight: 400;
+}
+
+.legendTitle {
+      font-size: 1.6rem;
+      fill: #4F4F4F;
+      font-weight: 300;
+}
+
+.bordered {
+    stroke: white;
+    stroke-opacity: 0.6;
+}
+
+.val:hover {
+  opacity: 0.6
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
